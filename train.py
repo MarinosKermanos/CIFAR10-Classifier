@@ -138,7 +138,12 @@ if __name__ == "__main__":
 
         if acc > best_acc:
             best_acc = acc
-            torch.save(model.state_dict(), 'models/best_model.pth')
-            print(f"  ✓ Saved best model ({best_acc:.2f}%)")
+            torch.save({
+                'epoch': epoch,
+                'model_state_dict': model.state_dict(),
+                'optimizer_state_dict': optimizer.state_dict(),
+                'val_acc': best_acc,
+            }, 'models/best_checkpoint.pth')
+            print(f"  ✓ Saved best checkpoint ({best_acc:.2f}%)")
 
     print(f"\nFinished. Best accuracy: {best_acc:.2f}%")
