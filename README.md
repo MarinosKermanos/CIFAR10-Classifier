@@ -22,10 +22,10 @@ Input (3×32×32)
 | Scheduler | StepLR (step=10, γ=0.5) |
 
 ## Training Curves
-![curves](models/training_curves.png)
+![curves](assets/training_curves.png)
 
 ## Confusion Matrix
-![cm](models/confusion_matrix.png)
+![cm](assets/confusion_matrix.png)
 
 ## Setup
 
