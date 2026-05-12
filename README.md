@@ -2,6 +2,7 @@
 
 A PyTorch CNN trained on CIFAR-10 achieving >75% test accuracy.
 
+
 ## Architecture
 
 3-block CNN with BatchNorm and Dropout:
